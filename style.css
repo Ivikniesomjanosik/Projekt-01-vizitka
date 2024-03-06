@@ -1,6 +1,161 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
-h1{
-    color: blue;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.kontajner{
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+  text-align: center;
+
+}
+
+.okno a,
+.oknodva a,
+.oknotri a{
+  text-decoration: none;
+  font-family: "Cabin Sketch", sans-serif;
+  color: #413e3e;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 85px;
+  
+ 
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #f8f9fa;
+
+}
+
+.okno:hover,
+.oknodva:hover,
+.oknotri:hover{
+  background-color: #ffffff;
+  opacity: 0.5;
+  border: 3px #85858a solid;
+}
+
+.okno,
+.oknodva,
+.oknotri{
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 2px #85858a solid;
+  margin: 50px 50px 153px 50px;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 8px #85858a;
+}
+
+
+.hlavicka{
+  width: 100%;
+  padding: 0;
+  
+}
+
+.hlavicka a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 23px;
+  color: white;
+  
+}
+
+.hlavicka a:hover{
+  color: #9d9595;
+}
+
+.hlavicka{
+  background-color: #2f3e46;
+  padding: 5px;
+  position: relative;
+}
+
+
+.paticka{
+  width: 100%;
+  background-color: #2f3e46;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 10px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+ .mojefoto{
+  border-radius: 50%;
+  position: absolute;
+  right: 75px;
+  top: 30px;
+  border: 2px solid #85858a;
+}
+
+.mojefoto:hover{
+  border: 3px solid #85858a;
+}
+
+.vtak{
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+  width: 240px;
+  height: 240px;
+}
+
+.nazov{
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 37px;
+  color: #111f27;
+  position: absolute;
+  top: 110px;
+  right: 610px; 
+  text-shadow: 10px 10px 10px #ffffff;
+}
+
+h2{
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.Omne,
+.Hobby,
+.Foto{
+  padding: 85px 300px 75px 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+   
+}
+
+.Omne p,
+.Hobby p{
+  line-height: 2;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.fotky{
+  border-radius: 50%;
+  padding: 30px;
+  
+ 
+}
+
+.fotky:hover{
+  width: 180px;
+  height: 180px;
+
 }
